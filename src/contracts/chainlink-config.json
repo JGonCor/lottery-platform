@@ -1,0 +1,22 @@
+{
+  "mainnet": {
+    "bsc": {
+      "vrfCoordinator": "0xc587d9053cd1118f25F645F9E08BB98c9712A4EE",
+      "gasLane": "0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04",
+      "subscriptionId": "TU_SUBSCRIPTION_ID_REAL",
+      "callbackGasLimit": 2500000,
+      "linkToken": "0x404460C6A5EdE2D891e8297795264fDe62ADBB75",
+      "automationRegistry": "0x02777053d6764996e594c3E88AF1D58D5363a2e6"
+    }
+  },
+  "testnet": {
+    "bsc": {
+      "vrfCoordinator": "0x6A2AAd07396B36Fe02a22b33cf443582f682c82f",
+      "gasLane": "0xd4bb89654db74673a187bd804519e65e3f71a52bc55f11da7601a13dcf505314",
+      "subscriptionId": 0,
+      "callbackGasLimit": 2500000,
+      "linkToken": "0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06",
+      "automationRegistry": "0xE16Df59B887e3Caa439E0b29B42bA2e7976FD8b2"
+    }
+  }
+}

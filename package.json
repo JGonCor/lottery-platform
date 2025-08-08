@@ -1,38 +1,179 @@
 {
   "name": "lottery-platform",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "homepage": ".",
+  "sideEffects": [
+    "*.css",
+    "*.scss",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.gif",
+    "*.svg"
+  ],
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
-    "@types/react": "^19.1.4",
-    "@types/react-dom": "^19.1.5",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "@chainlink/contracts": "^0.8.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.6",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@types/styled-components": "^5.1.28",
+    "@web3-react/core": "^8.2.3",
+    "@web3-react/metamask": "^8.2.4",
+    "@web3-react/types": "^8.2.3",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^6.15.0",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "stream-browserify": "^3.0.0",
+    "styled-components": "^6.0.8",
+    "typescript": "^5.2.2",
+    "web-vitals": "^3.5.0",
+    "web3": "^4.1.2",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.8.2",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "@playwright/test": "^1.40.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^5.2.2",
+    "@types/compression": "^1.7.5",
+    "@types/mocha": "^10.0.10",
+    "@types/react-test-renderer": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "assert": "^2.1.0",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-styled-components": "^2.1.4",
+    "chai": "^5.2.1",
+    "compression-webpack-plugin": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "hardhat": "^2.26.1",
+    "hardhat-gas-reporter": "^2.3.0",
+    "html-webpack-plugin": "^5.5.3",
+    "https-browserify": "^1.0.0",
+    "husky": "^8.0.3",
+    "image-webpack-loader": "^8.1.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.0.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "msw": "^2.0.8",
+    "os-browserify": "^0.3.0",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.0.3",
+    "process": "^0.11.10",
+    "react-test-renderer": "^18.2.0",
+    "solidity-coverage": "^0.8.16",
+    "start-server-and-test": "^2.0.3",
+    "stream-http": "^3.2.0",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.5.0",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "url": "^0.11.4",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.9.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack serve --config webpack.dev.config.js",
+    "build": "webpack --config webpack.simple.config.js",
+    "build:analyze": "ANALYZE=true npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:ci": "react-scripts test --coverage --watchAll=false --ci",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "deploy:testnet": "npx hardhat run scripts/deploy-testnet.js --network bscTestnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy-mainnet.js --network bscMainnet",
+    "change:owner": "node scripts/change-owner.js",
+    "monitor:earnings": "node scripts/monitor-earnings.js",
+    "validate:system": "node scripts/validate-system.js",
+    "check:deployment": "node scripts/quick-deploy-check.js",
+    "setup:env": "node scripts/setup-env.js",
+    "summary": "node scripts/deployment-summary.js",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
+    "lint:check": "eslint src --ext .ts,.tsx,.js,.jsx",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir=build",
+    "deploy:vercel": "npm run build && vercel --prod",
+    "serve": "serve -s build -l 3000",
+    "audit:security": "npm audit --audit-level moderate",
+    "audit:licenses": "license-checker --summary",
+    "clean": "rm -rf build node_modules/.cache"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "@typescript-eslint/recommended",
+      "plugin:jsx-a11y/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "jsx-a11y",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "jsx-a11y/anchor-is-valid": "error",
+      "jsx-a11y/click-events-have-key-events": "error",
+      "jsx-a11y/no-static-element-interactions": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
+      "not ie 11",
       "not op_mini all"
     ],
     "development": [
@@ -40,5 +181,45 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{json,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run type-check && npm run test:ci"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/index.tsx",
+      "!src/serviceWorker.ts",
+      "!src/test/**/*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   }
 }
