@@ -118,6 +118,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.config.js",
     "build": "webpack --config webpack.simple.config.js",
+    "vercel-build": "webpack --config webpack.simple.config.js",
     "build:analyze": "ANALYZE=true npm run build",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
